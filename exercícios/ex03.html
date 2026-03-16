@@ -3,76 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mine site</title>
+    <title>box model</title>
     <style>
-        body{
-            background: linear-gradient(to right, #141e30, #243b55);
-        }
-        h1{
-            font-family: monospace;
-            font-size: 3em;
-            color: yellowgreen;
-            border: 5px solid blue;
-            padding: 10px;
-            margin: auto;
-            border-radius: 10%;
-            text-align: center;
-        }
-        h2{
-            background-color: darkgoldenrod;
-            color: white;
-        }
-        p{
-            font-size: 15px;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        a{
-            font-size: 2em;
-        }
-
-        .botaoW{
-        background-color:#25D366;
-        color:white;
-        padding:1px 2px;
-        text-decoration:none;
-        border-radius:8px;
-        font-weight:bold;
-        }
-        .botaoW:hover{
-        background-color:#1ebe5d;
-        }
-        .botaoG{
-            background-color: #171515;
-            color: #ffffff;
-            padding: 1px 2px;
-            text-decoration: none;
-            border-radius: 8px;
+      body{
+              max-width:800px;
+                margin:auto;
+                }
+      section{
+                margin-bottom:40px;
+                }
+      
+        /*PSEUDO-CLASS*/
+    #primeiro:hover {
+      
+       padding:10px 20px;
+       border:none;
+       background:#007bff;
+       color:white;
+       border-radius:5px;
+       cursor:pointer;
+       }
+      #primeiro:hover{
+            background:#0056b3;
+             }
+    button:active {
+      padding: 10px 20px;
+      border: none;
+      background-color: greenyellow;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:active{
+      background-color: red;
+                  }
+    input:checked {
+          width: 20px;
+            height: 20px;
+            }
+    div:empty {
+          background-color: yellow;
+            width: 100px;
+              height: 100px;
+              }
+    .segundo:focus {
+          border: 2px solid blue;
+          }
+    /*PSEUDO-ELEMENTO*/
+    p{
+      margin: 10px 0;
+    }
+    .um::before {
+          content: "👉 ";
+          }
+    .dois::after {
+          content: " 👋";
+          }
+    .tres::first-letter {
+          font-size: 40px;
+            color: red;
+            }
+    .quatro::first-line {
+          color: blue;
             font-weight: bold;
-        }
-        .botaoG{
-            background-color: #333333;
-        }
-        .botaoI{
-            background:linear-gradient( 45deg, #feda75,#fa7e1e, #d62976, #962fbf, #4f5bd5);
-            color: white;
-            padding:1px 2px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
+            }
+    
     </style>
 </head>
 <body>
-        <h1>minha foto</h1>
-        <p><img src="../imagens/eu.jpg" alt="foto" width="100%"> <br>
-       me chamo Gabriel Dias Amorim tenho 19 anos </p>
-      <p>Eu estou aprendendo desenvolvimento web atualmente</p>
-    <h2>minhas redes sociais</h2>
-    <p><a href="https://www.instagram.com/gabriel_d.amorim?igsh=MWI0MnRlb2x6aG01dg==" class="botaoI">Instagram</a></p>
-<p></p>
-    <p><a href="https://github.com/Gabriel-Dias-Amorim?tab=repositories" class="botaoG" target="_blank">Github</a></p>
-<p></p>
-    <p><a href="https://wa.me/5588981747185?text=Olá%20vi%20seu%20site" class="botaoW">WhatsApp</a></p>
+      <section>
+    <h1>PSEUDO-CLASS</h1>
+    <button id="primeiro">COMPRAR</button>
+    <button>COMPRAR</button>
+    <input type="checkbox"> Aceitar termos
+    <div></div>
+    <div>Olá</div>
+    <input type="text" placeholder="Digite seu nome" class="segundo">
+    </section>
+    <h1>PSEUDO-ELEMENTO</h1>
+    <section>
+    <p class="um">Olá mundo</p>
+    <p class="dois">Olá mundo</p>
+    <p class="tres">Este é um exemplo de texto.</p>
+    <p class="quatro">Este é um texto de exemplo para mostrar como funciona o pseudo-elemento first-line no CSS.</p>
+    </section>
 </body>
 </html>

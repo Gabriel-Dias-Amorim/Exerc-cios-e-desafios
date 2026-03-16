@@ -3,68 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>praticando</title>
+    <title>Document</title>
     <style>
-        body{
-            background-image: linear-gradient(to right, #4facfe, #00f2fe);
-            }
-        h1{
-            text-align: center;
-            font-size: 3em;
-        }
-        p{
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            font-size: 20px;
-            text-align: justify;
-        }
-        h2{
-            font-family: sans-serif;
-            font-size: 20px;
-        }
-        ul{
-            color: black;
-            font-size: 20px;
-        }
-        a:hover{
-            background-color: green;
-        }
-        div{
-            width:300px;
-            border:2px solid red;
-            padding:10px;
-            margin:auto;
-            border-radius:10px;
-            background-color: orange
-            }
-        
+    body{
+        font: 1em arial, helvetica, sans-serif;
+        background-color: greenyellow;
+    }
     </style>
 </head>
 <body>
-    <h1>caixa box model</h1>
-    <div>olá, mundo!</div>
-    <h2>pagina de apresentação & Estilizando com css</h2>
-    <h2>Sobre mim</h2>
-    <p>Meu nome é Gabriel e estou aprendendo desenvolvimento web.</p>
-    <h2>O que estou aprendendo</h2>
-    <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>GitHub</li>
-    </ul>
-    <h1>links</h1>
-        <h2> link para o Google</h2>
-    <p><a href="https://www.google.com">Google</a></p>
-        <h2>link para YouTube</h2>
-    <p><a href="https://www.youtube.com/cursoemvideo/">YouTube</a></p>
-        <h2>link para o github</h2>
-    <p><a href="https://gusravoguanabara.githun.io">GitHub</a></p>
-    <h1>lista de definições</h1>
-    <dl>
-        <dt>HTML</dt>
-        <dd>Linguagem de marcação.</dd>
-        <dt>CSS</dt>
-        <dd>Linguagem de estilo.</dd>
-    </dl>
+    <header>
+        <h1> aqui é o header, O header é o cabeçalho do site Normalmente ele contém:
+            logo,
+            título,
+            menu de navegação
+        </h1>
+        <nav>
+            aqui é o nav, significa navigation (navegação).
+            Serve para colocar links do menu.
+        </nav>
+    </header>
+    <main>
+        main aqui, main representa o conteúdo principal do site.
+        Só deve existir um <main> por página.
+        <section>
+            section aqui, section é uma seção do site.
+            Exemplo:
+            Blog
+            Produtos
+            Sobre
+            Contato
+            <article>
+                <h2>article aqui</h2>
+                <p>article representa um conteúdo independente.
+                    Exemplo:
+                    postagem de blog,
+                    notícia,
+                    produto,
+                    comentário
+                </p>
+            </article>
+            <article>
+            <h2>article aqui</h2>
+            <p>texto</p>
+            <aside> aside aqui</aside>
+            </article>
+        </section>
+        <aside>aqui é o aside, aside é conteúdo secundário.
+            Pode ser:
+            propaganda,
+            links relacionados,
+            curiosidades,
+            barra lateral
+        </aside>
+    </main>
+    <footer>
+        aqui estou usaudo o footer, O footer é o rodapé do site.Normalmente tem:
+        direitos autorais
+        links
+        redes sociais
+    </footer>
 </body>
 </html>
