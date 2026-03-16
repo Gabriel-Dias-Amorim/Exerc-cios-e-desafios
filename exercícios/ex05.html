@@ -5,21 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>box model</title>
     <style>
-        p{
-            outline: 30px solid red;
-            border: 8px solid blue;
-            padding: 1em ;
-            margin:30px ;
-            background-color:salmon ;
-            width: 400px;
-            border-radius: 30px 30px;
-            color: black;
-        }
+        /*PSEUDO-CLASS*/
+    #primeiro:hover {
+         background-color: red;
+            }
+    button:active {
+        background-color: green;
+                  }
+    input:checked {
+          width: 20px;
+            height: 20px;
+            }
+    div:empty {
+          background-color: red;
+            width: 100px;
+              height: 100px;
+              }
+    .segundo:focus {
+          border: 2px solid blue;
+          }
+    /*PSEUDO-ELEMENTO*/
+    .um::before {
+          content: "👉 ";
+          }
+    .dois::after {
+          content: " 👋";
+          }
+    .tres::first-letter {
+          font-size: 40px;
+            color: red;
+            }
+    .quatro::first-line {
+          color: blue;
+            font-weight: bold;
+            }
+    
     </style>
 </head>
 <body>
-    <p>Sobre mim
-        Estou estudando desenvolvimento web para trabalhar com tecnologia.
-    </p>
+    <h1>PSEUDO-CLASS</h1>
+    <button id="primeiro">COMPRAR</button>
+    <button>COMPRAR</button>
+    <input type="checkbox"> Aceitar termos
+    <div></div>
+    <div>Olá</div>
+    <input type="text" placeholder="Digite seu nome" class="segundo">
+    <h1>PSEUDO-ELEMENTO</h1>
+    <p class="um">Olá mundo</p>
+    <p class="dois">Olá mundo</p>
+    <p class="tres">Este é um exemplo de texto.</p>
+    <p class="quatro">Este é um texto de exemplo para mostrar como funciona o pseudo-elemento first-line no CSS.</p>
 </body>
 </html>
